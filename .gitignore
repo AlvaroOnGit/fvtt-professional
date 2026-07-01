@@ -23,5 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
+#Project files
+project-config.json
 #FoundryVTT
 foundry

@@ -1,0 +1,4 @@
+{
+  "foundryPath": "Path to your foundry installation",
+  "foundryDataPath": "Path to your foundry data directory"
+}
