@@ -1,23 +1,27 @@
 {
   "compilerOptions": {
-    "target": "es2023",
-    "module": "esnext",
-    "lib": ["ES2023", "DOM"],
-    "types": ["vite/client"],
-    "skipLibCheck": true,
-
-    /* Bundler mode */
+    "target": "ES2022",
+    "module": "ES2022",
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
-    "verbatimModuleSyntax": true,
-    "moduleDetection": "force",
+    "lib": ["ES2022", "DOM"],
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "skipLibCheck": true,
     "noEmit": true,
-
-    /* Linting */
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "erasableSyntaxOnly": true,
-    "noFallthroughCasesInSwitch": true
+    "paths": {
+      "src/*": ["./src/*"],
+      "@client/*": ["./foundry/resources/app/client/*"],
+      "@common/*": ["./foundry/resources/app/common/*"]
+    }
   },
-  "include": ["src"]
+  "include": [
+    "src/**/*.ts",
+    "foundry/resources/app/client/*",
+    "foundry/resources/app/common/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "./src/tools"
+  ]
 }
