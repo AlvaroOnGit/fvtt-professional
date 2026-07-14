@@ -30,6 +30,11 @@
   "esmodules": [
     "main.js"
   ],
+  "documentTypes": {
+    "Item": {
+      "recipe": {}
+    }
+  },
   "languages": [
     {
       "lang": "en",
