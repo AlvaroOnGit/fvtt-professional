@@ -30,4 +30,8 @@ declare global {
          */
         off(hook: string, fn?: Function): void;
     };
+    /**
+     * Global helper for foundry localization keys
+     */
+    function _loc(key: string): string;
 }
