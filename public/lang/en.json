@@ -1,4 +1,11 @@
 {
-  "Professional.Crafting.Title": "Crafting",
-  "Professional.Gathering.Title": "Gathering"
+  "TYPES.Item": {
+    "professional.recipe": "Recipe",
+    "professional.recipePl": "Recipes"
+  },
+  "PROFESSIONAL": {
+    "ITEM.SECTIONS.Recipe": "Crafting Details",
+    "Crafting.Title": "Crafting",
+    "Gathering.Title": "Gathering"
+  }
 }
