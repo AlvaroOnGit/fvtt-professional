@@ -1,7 +1,11 @@
 {
-  "TYPES.ITEM.PROFESSIONAL.Recipe": "Receta",
-  "PROFESSIONAL.ITEM.RecipePl": "Recetas",
-  "PROFESSIONAL.ITEM.SECTIONS.Recipe": "Elaboración",
-  "PROFESSIONAL.CRAFTING.Title": "Elaboración",
-  "PROFESSIONAL.GATHERING.Title": "Recolección"
+  "TYPES.Item": {
+    "professional.recipe": "Receta",
+    "professional.recipePl": "Recetas"
+  },
+  "PROFESSIONAL": {
+    "ITEM.SECTIONS.Recipe": "Elaboración",
+    "Crafting.Title": "Elaboración",
+    "Gathering.Title": "Recolección"
+  }
 }
