@@ -1,22 +1,36 @@
+import CONSTANTS from './constants'
+import Logger from './utils/logger'
 import RecipeData from './data/recipeData';
-import RecipeSheet from "./sheets/recipeSheet";
+import RecipeSheet from './sheets/recipeSheet';
 
 /**
  * Global helper to localize keys
  */
 (globalThis as any)._loc = (key: string): string => game.i18n.localize(key);
 
-const moduleId = 'professional';
-const sheetType = `${moduleId}.recipe`;
+const sheetType = `${CONSTANTS.MODULE_ID}.recipe`;
 
 Hooks.once('init', () => {
-    CONFIG.Item.dataModels[`${moduleId}.recipe`] = RecipeData;
-    CONFIG.DND5E.defaultArtwork.Item[`${moduleId}.recipe`] = `modules/${moduleId}/assets/icons/recipe.svg`;
+    /**
+     * FOUNDRY MODULE SETTINGS
+     */
+    game.settings.register(`${CONSTANTS.MODULE_ID}`, 'debugMode', {
+        name: 'SETTINGS.DebugMode.Name',
+        hint: 'SETTINGS.DebugMode.Hint',
+        scope: 'client',
+        config: true,
+        type: Boolean,
+        default: false,
+    });
+
+    Logger.info('Initializing Module');
+
+    CONFIG.Item.dataModels[`${CONSTANTS.MODULE_ID}.recipe`] = RecipeData;
+    CONFIG.DND5E.defaultArtwork.Item[`${CONSTANTS.MODULE_ID}.recipe`] = `modules/${CONSTANTS.MODULE_ID}/assets/icons/recipe.svg`;
 
     const Items = foundry.documents.collections.Items;
-
     Items.registerSheet(
-        moduleId,
+        CONSTANTS.MODULE_ID,
         RecipeSheet,
         {
             types: [`${sheetType}`],
