@@ -7,5 +7,9 @@
     "ITEM.SECTIONS.Recipe": "Elaboración",
     "Crafting.Title": "Elaboración",
     "Gathering.Title": "Recolección"
+  },
+  "SETTINGS": {
+    "DebugMode.Name": "Modo Depuración",
+    "DebugMode.Hint": "Activa el registro de depuración del módulo. Solo se recomienda para diagnosticar problemas."
   }
 }

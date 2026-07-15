@@ -7,5 +7,9 @@
     "ITEM.SECTIONS.Recipe": "Crafting Details",
     "Crafting.Title": "Crafting",
     "Gathering.Title": "Gathering"
+  },
+  "SETTINGS": {
+    "DebugMode.Name": "Debug Mode",
+    "DebugMode.Hint": "Activated the modules Debug Mode. Only recommended to diagnose problems with the module."
   }
 }
